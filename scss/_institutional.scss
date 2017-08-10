@@ -1,0 +1,166 @@
+/*-  INSTITUTIONAL NAVIGATION
+----------------------------------------------------------------------*/
+
+#institutional-nav {
+	background-color: $black-82;
+	height: 27px;
+	padding-left: 0;
+	position: relative;
+	z-index: 99999 !important;
+	a {
+		display: block;
+		position: relative;
+		padding: 0; /* 22px;*/
+		text-decoration: none;
+	}
+	li {
+		float: left;
+		height: 23px;
+		.social {
+			// float:right;
+		}
+	}
+	.container {
+		top: 2px;
+		position: relative;
+	}
+	.social {
+		float:right;
+	}
+}
+
+#inst-home {
+	a {
+		border: none;
+		padding: 0;
+  		width: 118px;
+	}
+	img {
+		position: absolute;
+		top: -2px;
+		margin-left:-4px;
+		left: 0;
+		z-index: 100000;
+	}
+}
+/* SOCIAL MEDIA LINKS */
+.social {
+	li {
+		float: left;
+		background-position: center center;
+		background-repeat: none;
+		margin-left: 5px;
+	}
+	a {
+		height: 22px;
+		width: 20px;
+		background-position: center center;
+		background-repeat: none;
+	}
+	.facebook {
+		background: transparent url(images/bg-sprite-transparent.png) -499px -20px no-repeat;
+	}
+	.twitter {
+		background: transparent url(images/bg-sprite-transparent.png) -552px -20px no-repeat;
+	}
+	.youtube {
+		background: transparent url(images/bg-sprite-transparent.png) -527px -20px no-repeat;
+	}
+	.linkedin {
+		background: transparent url(images/bg-sprite-transparent.png) -474px -20px no-repeat;
+	}
+	.instagram {
+		background: transparent url(images/bg-sprite-transparent.png) -448px -20px no-repeat;
+	}
+	.flickr {
+		background: transparent url(images/bg-sprite-transparent.png) -422px -20px no-repeat;
+	}
+}
+
+/*-  INSTITUTIONAL FOOTER
+----------------------------------------------------------------------*/
+
+#institutional-footer {
+	border-top: $orange 5px solid;
+	background-color: $black-82;
+	address {
+		font-style: normal;
+	}
+	h2 {
+		font-size:1.4em;
+	}
+	p {
+		font-size:0.9em;
+		line-height: 1.25em;
+	}
+	.container {
+		position: relative;
+		padding: 20px 0;
+	}
+}
+
+#footer_container {
+	float: left;
+	width: 100%;
+}
+
+.footer-links {
+	@include spaced-headline (sans);
+	ul {
+		margin: 0.5em 0 0 0;
+		padding:0;
+	}
+	li {
+		margin-bottom: 0.75em;
+	}
+}
+.mail {
+	background: transparent url(images/bg-sprite-transparent.png) -474px -77px no-repeat;
+	padding-left:30px;
+	margin-left:5px;
+	height:20px;
+}
+.phone {
+	background: transparent url(images/bg-sprite-transparent.png) -1263px -394px no-repeat;
+	padding-left:30px;
+	margin-left:5px;
+	height:20px;
+}
+.pnetf {
+	background: transparent url(images/bg-sprite-transparent.png) -238px -250px no-repeat;
+	width:360px;
+	height:70px;
+	margin:0 auto;
+}
+.uf-logo {
+	width:210px;
+	height:50px;
+	background: transparent url(images/bg-sprite-transparent.png) -10px -268px no-repeat;
+}
+.gift {
+	padding: 15px 0 15px 50px;
+	background: transparent url(images/bg-sprite-transparent.png) -750px -155px no-repeat;
+}
+.online-store {
+	padding-left: 50px;
+	min-height:40px;
+	background: transparent url(images/bg-sprite-transparent.png) -750px -226px no-repeat;
+}
+.footer-bottom {
+	background-color:$black-50;
+	color: $black-75;
+	font-size: 0.9em;
+	a, a:link, a:active, a:visited {
+		color: $white;
+	}
+	ul {
+		margin:1em 0 0 0;
+		padding:0;
+		clear:both;
+	}
+	li {
+		float:left;
+		margin-right:1.5em;
+		padding:1em 0;
+	}
+}

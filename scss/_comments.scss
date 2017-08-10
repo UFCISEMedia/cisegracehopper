@@ -1,0 +1,301 @@
+/* --------------------------------------------------------------
+
+   COMMENT STYLES
+   
+-------------------------------------------------------------- */
+
+#comment-container {
+	padding-top: 0;
+}
+
+.comments-sidebar {
+	width: 140px;
+	margin-right: 40px;
+	padding-top: 60px;
+	text-align: right;
+	float: left;
+	font-size: 11px;
+}
+
+#respond-wrap .comments-sidebar {
+	padding-top: 30px;
+}
+
+.commentlist {
+	margin: 10px 0 0 0;
+	padding-top: 0;
+	padding-left: 0;
+	list-style-type: none;
+	width: 100%;
+	float: left;
+	border-top: 1px solid #efefef;
+}
+
+.commentlist .line {
+	display: none;
+}
+
+.commentlist li li li .line{
+	display: block;
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	border-bottom: 1px solid #efefef;
+	margin: 0 0 0 -50px;
+}
+
+.commentlist .comment-body { 
+	padding-left: 65px;
+}
+
+.commentlist li li .comment-body {
+	padding-left: 45px;
+}
+
+.commentlist ul {
+	border-left: 1px solid #efefef;
+	margin: 0 0 0 63px;
+}
+
+.commentlist ul ul{
+	margin: 0 0 0 50px;
+}
+
+.commentlist li li {
+	padding-top: 25px;
+	margin-top: 0;
+}
+
+.commentlist li #commentform {
+	margin-top: 20px;
+}
+
+.pinglist {
+	margin: 20px 0 40px 30px;
+	list-style-type: decimal;
+}
+
+.comment {
+	padding-top: 15px;
+	margin-bottom: 40px;
+	background: $white;
+	border-top: 1px dotted #CCC;
+	position: relative;
+}
+
+
+li .comment, .comment:first-child {
+	border-top: none;
+}
+
+.comment-body ul,
+.comment-body ol,
+.comment-body dl { margin-left: 30px; }
+
+#respond {
+	margin-top: 18px;
+	background-color: #ECEFF6;
+	padding: 15px;
+	overflow: visible;
+	position: relative;
+	border-top: 3px solid #CAD3EB;
+}
+
+#respond label {
+	display: block;
+}
+
+#commentform {
+	margin-top: 30px;
+	float: left;
+	width: 500px;
+}
+
+.commentform-inputs {
+	float: left;
+	width: 195px;
+	margin-right: 20px;
+}
+.commentform-textarea {
+	float: right;
+	height: 120px;
+	width: 390px;
+}
+
+.logged-in .commentform-textarea {
+	position: relative;
+	top: -45px;
+	left: -45px;
+}
+
+li .cancel-comment-reply {
+	padding: 5px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	margin-right: 4px;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 0 0 $white;
+	background: $light-blue;
+	border-color: $light-blue;
+	border-style: solid;
+	border-width: 1px;
+	font-family: $sans, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	text-align: center;
+	text-shadow: 0 1px 0 $white;
+}
+
+li #cancel-comment-reply-link {
+	color: $medium-blue;
+}
+
+ol #commentform { width: 100%; }
+
+#commentform input,
+#commentform textarea { 
+	width: 100%;
+	border: 1px solid $light-blue;
+	padding: 5px;
+	border-radius: 2px;
+	color: #999;
+}
+
+#commentform #submit {
+	width: 150px;
+	float: right;
+	margin-right: 4px;
+	color: $white;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 0 0 $light-orange;
+	background: $med-orange;
+	border-color: $b-orange;
+	border-style: solid;
+	border-width: 1px;
+	font-family: $sans, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0 -1px 0 $b-orange;
+}
+
+.logged-in #commentform textarea {
+	width: 420px;
+	height: 140px;
+}
+#commentform textarea {
+	width: 375px;
+	height: 128px;
+}
+
+#commentform small {
+	color: $medium-blue;
+	padding: 0 0 3px 3px;
+	display: block;
+}
+
+#commentform small span.grey,
+.contactform small span.grey{
+	color: #999;
+	font-style: italic;
+}
+
+.children { list-style-type: none; }
+
+.ie7 li li .avatar {
+	left: -15px;
+}
+
+li li .avatar {
+	margin:-8px 0 0 -18px;
+}
+
+.comment-meta { margin-bottom: 15px; }
+
+.comment-meta a { 
+	color: #999;
+	font-style: italic;
+	font-size: 11px;
+}
+
+.comment-meta a:hover { color: #666; }
+
+.comment-meta,
+.comment-author {
+	padding-left: 65px;
+}
+
+li li .comment-meta,
+li li .comment-author {
+	padding-left: 45px;
+}
+
+.comment-author a {
+	color: $medium-blue;
+}
+
+.comment-author { 
+	margin-top: -53px;
+	font-weight: bold;
+	color: $medium-blue;
+}
+
+.commentlist .bypostauthor {
+	border-top: 2px solid $med-orange;
+}
+.comment-author cite { 
+}
+
+.comment .comment-reply-link {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	color: $white;
+	padding: 4px;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 0 0 $light-orange;
+	background: $med-orange;
+	border-color: $b-orange;
+	border-style: solid;
+	border-width: 1px;
+	text-align: center;
+	text-shadow: 0 -1px 0 $b-orange;
+}
+
+.comment .comment-reply-link:hover {
+	color: $white;
+}
+
+.nocomments {
+	text-align: center;
+	padding: 20px;
+}
+
+.comment-body ul { 
+	list-style-type: disc; 
+	border: none;
+	margin-bottom: 20px;
+}
+
+.comment-body ul li {
+	padding: 0;
+	margin: 0;
+}
+
+.comment-body ol { list-style-type: decimal; }
+
+.moderation {
+	padding-left: 45px;
+	color: red;
+	font-size: 11px;
+}
+
+.author-tag {
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#respond-wrap {
+	overflow: visible;
+	margin-left: 0;
+}

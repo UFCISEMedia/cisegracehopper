@@ -1,0 +1,419 @@
+/*-  MAIN (ARTICLE) CONTENT
+----------------------------------------------------------------------*/
+
+button, .button, .gform_button {
+	width: auto;
+	overflow: visible;
+	color: $white;
+	background-color: $orange;
+	border: 1px solid $orange !important;
+	text-align: center;
+	padding: 10px 30px;
+	border-radius: 5px;
+	border:none;
+	text-transform: uppercase;
+
+	&:visited {
+		color:$white;
+	}
+	&:hover, &:active {
+		color:$white;
+		background-color: $med-orange;
+		border: 1px solid $dark-orange !important;
+		cursor:pointer;
+		border:none;
+	}
+}
+article {
+	p, li, address, dt, dd {
+		font-size:100%;
+		line-height:1.75em;
+	}
+	ul li {
+		background: transparent url(images/bg-orange-bullet.png) 0 8px no-repeat;
+		padding-left: 12px;
+	}
+	a {
+		color: $dark-blue;
+		text-decoration: none;
+		border-bottom: 1px dotted $dark-blue;
+		&:hover {
+			color: $dark-blue;
+			text-decoration: none;
+			border-bottom: 1px solid $medium-blue;
+		}
+		&:visited{
+			 color: $medium-blue;
+		}
+	}
+}
+#main-content {
+	aside {
+		@extend .sidebar_widget;
+		width:30%;
+		float:right;
+		margin:0 0 15px 15px;
+
+		h2, h3 {
+			font-size: 1.25em;
+			margin: 0 -5px .5em;
+			padding: 6px 10px;
+			background-color: $white;
+			border-bottom: 1px solid $black-75;
+		}
+		&.pullquote {
+			@extend blockquote;
+			background-image:none;
+			padding-top: 1em;
+			margin-top:0;
+			margin-bottom:0;
+		}
+		&.pullquote-full {
+			@extend .pullquote;
+			width:auto;
+			float:none;
+		}
+	}
+	li {
+		margin-bottom: .5em;
+	}
+	.wp-post-image, .size-full, .size-thumbnail, .avatar {
+	padding: 4px; 
+	border: 1px solid $light-blue;
+	}
+	.entry {
+		border-top: 1px solid $black-75;
+		padding-top:20px;
+		position: relative;
+	}
+}
+.avatar {
+	position: relative;
+	background: $white;
+	z-index: 5;
+}
+
+/* In-content tabbed navigation */
+.tabs {
+	margin: 0;
+	padding-left:0;
+	position: relative;
+	top: 5px;
+	height: 28px;
+
+	li {
+		font-size: 1em;
+		font-family: $sans, Arial, Helvetica, sans-serif;
+		float: left;
+		margin: 0 5px 0 0;
+		padding-left: 0;
+		position: relative; /* IE6,7 require this if overflow property is set */
+		height: 2em;
+		background-image: none;
+	}
+	a {
+		height: 2em;
+		display: block;
+		line-height: 2em;
+		padding: 2px 10px 0 10px;	
+		position: relative;
+		z-index: 0;
+		margin: 0;
+		border: 2px solid $black-82;
+		background-color: $light-blue;
+
+	}
+	.current_page_item a {
+		background-color: $light-teal-blue;
+		border-top: 4px solid $orange;
+		padding-top: 0;
+		z-index: 11;
+		border-bottom: none;
+	}
+
+}
+.tab-content {
+	float:left;
+	position:relative;
+	z-index:10;
+	padding: 20px;
+	margin-bottom: 10px;
+	background-color:$light-teal-blue;
+	border-top: 2px solid $black-82;
+}
+
+ul.arrow {
+	margin: 0;
+}
+.arrow li {
+	background: url(images/arrow.png) 0 5px no-repeat;
+	padding-left: 20px;
+}
+.tintblock {
+	padding: 30px 10px 10px 10px; 
+	margin:20px 0;
+	background-color: $black-95; 
+	color:$dark-blue;
+}
+.alert {
+	color: $red;
+	font-weight: bold;
+}
+.lead {
+		font-weight:bold;
+		font-size: 1.25em;
+		color: $black-50;
+		margin-bottom: 1.25em;
+}
+.did-you-know {
+		background: url("images/dot-pattern.jpg") repeat-x scroll left 25px transparent;
+		border-bottom: 4px solid #D6D6D6;
+		min-width: 1px;
+		position: relative;
+}
+
+.did-you-know .lead {
+		margin-left: 20px;
+}
+
+.dyk-badge {
+		left: 8px;
+		margin-bottom: -65px;
+		position: relative;
+}
+
+
+/* Icons list - Icons are spaced 200px apart vertically in sprite. */
+.bg-icon {
+	// padding: 10px 0 0 50px;
+	 background: transparent url(images/bg-sprite-icons.png) 0px 0px no-repeat;
+	 min-height: 32px;
+	 color:$dark-blue;
+	 h2 {
+	 	padding-left: 50px;
+	 }
+}
+h2.bg-icon, h3.bg-icon, h4.bg-icon {
+	padding: 10px 0 0 50px;
+}
+/* Strategic research areas icons */
+// TO DELETE
+.advanced-manufacturing {background-position: 0px -390px;}
+.autonomous-systems {background-position: 0px -580px;}
+.big-data {background-position: 0px -780px;}
+.biomedical-informatics {background-position: 0px -1180px;}
+.cybersecurity {background-position: 0px -1385px;}
+.food-security {background-position: 0px -1590px;}
+.human-centered-computing {background-position: 0px -1776px;}
+.materials-innovation {background-position: 0px -1980px;}
+.neuroscience {background-position: 0px -2180px;}
+.online-learning {background-position: 0px -2376px;}
+.renewable-energy {background-position: 0px -2580px;}
+.smart-polymer-nanomedicine {background-position: 0px -2786px;}
+.social-network-analysis {background-position: 0px -2980px;}
+
+/* Strategic Priorities icons */
+.health {background-position: 0px -1196px;}
+.sustainability {background-position: 0px -2596px;}
+.security {background-position: 0px -1396px;}
+.enabling-technologies {background-position: 0px -1788px;}
+.leadership-economic-development {background-position: 0px -189px;}
+
+/* Powering the New Engineer */
+.people {background-position: 0px -3215px;};
+.places {background-position: 0px -3418px;};
+.programs {background-position: 0px -3618px;};
+.graduates {background-position: 0px -3816px;};
+.startups {background-position: 0px -4018px;};
+.inclusion {background-position: 0px -4218px;};
+.research-funding {background-position: 0px -4425px;};
+.competitive-edge {background-position: 0px -4620px;};
+
+/*-  CONTENT AREA FORMS
+----------------------------------------------------------------------*/
+article li.gfield {
+	background-image: none;
+}
+
+div.gform_wrapper h2.gsection_title,
+div.gform_wrapper h3.gform_title {
+	font-weight: normal;
+}
+
+.gform_wrapper .gform_footer {
+	margin-top: 0;
+	padding-top: 3px;
+}
+article {
+	input,textarea, select {
+		padding: 5px;
+		font-size: 15px;
+	border-radius: 2px;
+		border: 1px solid #BEBEBE;
+		color: $black-25;
+		box-shadow: inset 0 0 3px 1px black(0.15);
+	}
+	input:focus,textarea:focus {
+		border: 1px solid $medium-blue;
+	}
+}
+#secondary .gform_wrapper li,
+#secondary .gform_wrapper ul,
+.gform_wrapper li {
+	padding-left: 0;
+	background-image: none;
+}
+
+.gform_wrapper .ginput_complex .ginput_left,
+.gform_wrapper .ginput_complex .ginput_right,
+.gform_wrapper .ginput_complex .ginput_full {
+	margin-bottom: 5px;
+	padding-right: 1px;
+}
+
+#secondary .gform_wrapper li.gfield.gfield_error {
+	background-color: #C89797;
+}
+
+#secondary .validation_error,
+#secondary .gfield_required {
+	color: #C89797;
+}
+
+#secondary .gform_wrapper img {
+	border: none;
+}
+
+#gforms_confirmation_message {
+	border: 1px solid;
+	margin: 0 0 30px 0;
+	padding: 10px 10px 10px 40px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	border-radius: 5px;
+	background-size: auto 16px;
+	color: #294B05;
+	border-color: #4F8A10;
+	background-color: #DFF2BF;
+	background-image: url(images/success.png);
+}
+.gform_wrapper .gform_page_footer .button.gform_previous_button {
+	margin-bottom:0;
+}
+
+/*-  TABLE STYLES
+----------------------------------------------------------------------*/
+table {
+	margin-bottom:30px; 
+	overflow:visible; 
+}
+caption {
+	background:$white; 
+	padding:0; 
+	line-height:2em; 
+	font-weight: bold; 
+	overflow:hidden; 
+	text-align:left;
+}
+caption span  {
+	display: inline-block; 
+	padding: 7px 15px; 
+	margin: 0; 
+	background: $medium-blue; 
+	color: $white; 
+	font-size: 100%; 
+	line-height: 1.4em; 
+	border-top-left-radius: 5px; 
+	border-top-right-radius: 5px; 
+	box-shadow: 3px 3px 3px 0 $black-75;
+}
+tbody, thead { border: 2px solid $very-light-blue;}
+thead {border-bottom: none;}
+th, tbody td {
+	background:$white;
+	padding:12px;
+} 
+th, thead th {
+	border-bottom: 2px solid $orange; 
+	background:$white; 
+	padding-top:10px; 
+	padding-bottom:10px; 
+	font-size:90%;
+	text-align:left;
+}
+td ul {margin:15px 5px 15px 0; padding-left:0;}
+tbody tr:nth-child(even) td {background:$very-light-blue;} 
+tbody tr.even td {background:$very-light-blue;}
+
+
+/*-  SEARCH RESULTS & ARCHIVES
+----------------------------------------------------------------------*/
+.search .entry,
+.archive .entry {
+	clear: both;
+	overflow: auto;
+	border-bottom: 1px dotted $light-blue;
+	padding-top: 15px;
+	min-height: 60px;
+}
+
+.search .entry img,
+.archive .entry img {
+	padding: 4px;
+	border: 1px solid $light-blue;
+}
+
+.search h1,
+.search h4,
+.archive h1,
+.archive h4 {
+	margin-bottom: .2em;
+}
+
+.search .entry h2,
+.archive .entry h2,
+.display-posts-listing h2 {
+	font-size: 1.5em;
+	margin-bottom: .2em;
+}
+
+.search .published,
+.archive .published,
+.display-posts-listing .published {
+	font-size: .8em;
+	line-height: 1.4em;
+	margin-bottom: .6em;
+	padding: 1px 0 2px 18px;
+	display: inline;
+	color: $black-50;
+}
+
+.search p,
+.archive p,
+.display-posts-listing p {
+	margin-top: .4em;
+}
+
+.entry .post {
+	float: left;
+	width: 520px;
+}
+.display-posts-listing {
+	margin:0;
+	padding: 0;
+	li {
+		background: none;
+		padding:none;
+	}
+	.image {
+		float:left;
+		border-bottom:none;
+		img {
+			margin:0 20px 20px 0;
+		}
+	}
+}
+.listing-item {
+	clear:both;
+	margin:1em 0;
+}

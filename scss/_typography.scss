@@ -1,0 +1,295 @@
+/* --------------------------------------------------------------
+
+   TYPOGRAPHY STYLES
+   
+-------------------------------------------------------------- */
+
+// import webfonts 
+@import '_ufl-fonts';
+
+/*-  FONT NORMALIZATION
+----------------------------------------------------------------------*/
+
+
+.palatino {
+	font-family: Georgia,'Palatino Linotype', Palatino, 'Book Antiqua', serif; 
+}
+	
+footer, #utility-links, #breadcrumb, #sidebar-nav, #secondary, #user-role {
+ 	font-family: $sans, Arial, Helvetica, sans-serif;
+ }
+html {
+	font-size: 100.01%;
+	// font-family: sans-serif;
+ //  -ms-text-size-adjust: 100%;
+ //  -webkit-text-size-adjust: 100%;
+}
+
+body {
+	//font-size: 75%;
+	font-size: 85%;
+	background: $white;
+}
+body, input, textarea, select {
+	font-family: $serif, Georgia, serif;
+	color: $black-25;
+}
+small {
+  font-size: 85%;
+}
+
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong {
+  font-weight: normal;
+}
+h1, h2 {
+	font-family: $sans, Arial, Helvetica, sans-serif;
+	color: $dark-blue;
+	font-weight:bold;
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+}
+h1 {	
+	font-size: 2.2em;
+	letter-spacing: 0.15em;
+	text-shadow: -2px 2px 0 $light-blue;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 1.8em;
+	letter-spacing: 0.075em;
+}
+h3, h4, h5 {
+	font-family: $sans, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: $dark-blue;
+	letter-spacing: 0.05em;
+	margin-bottom: 0.5em;
+}
+
+h3 {
+	font-size: 1.25em;
+	line-height: 1;
+}
+
+h4 {
+	font-size: 1.1em;
+	line-height: 1.25;
+}
+
+h5 {
+	font-size: 1em;
+}
+
+h6 {
+	font-size: 1em;
+	font-family: $sans, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+	letter-spacing: 0.05em;
+	color: $black-25;
+}
+
+h1 img,
+h2 img,
+h3 img,
+h4 img,
+h5 img,
+h6 img {
+	margin: 0;
+}
+
+p {
+	margin: 0 0 1.75em 0;
+	line-height: 1.75em;
+}
+.initial {
+	font-size: 1.6em;
+	font-family: $sans, Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: $light-medium-blue;
+	text-shadow: -2px 2px 0 $light-blue;
+}
+.left {
+	float: left !important;
+}
+
+p .left {
+	margin: 1.5em 1.5em 1.5em 0;
+	padding:0;
+}
+
+.right {
+	float:right !important;
+}
+
+p .right {
+	margin: 1.5em 0 1.5em 1.5em;
+	padding: 0;
+}
+
+a {
+	color: $dark-blue;
+	text-decoration: underline;
+}
+
+a:hover, a:active {
+  outline: none;
+}
+
+a, a:active, a:visited {
+  color: $dark-blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong,
+dfn {
+	font-weight: bold;
+}
+
+em,
+dfn {
+	font-style: italic;
+}
+
+sup,
+sub {
+	line-height: 0;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+/* del */
+pre {
+	margin:1.5em 0;
+	white-space:pre;
+}
+
+pre,
+code,
+tt {
+	font: 1em 'andale mono', 'lucida console', monospace;
+	line-height: 1.5;
+}
+
+li ul,
+li ol {
+	margin: 0;
+}
+
+ul,
+ol {
+	margin: 0 1.5em 1.5em 0;
+	padding-left:1.5em;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+dl {
+	margin: 0 0 1.5em 0;
+}
+
+dl dt {
+	font-weight:bold;
+}
+
+dd {
+	margin-left: 1.5em;
+}
+
+li ul,
+li ol {
+  margin-top: .7em;
+}
+
+table {
+  margin-bottom:1.4em;
+  width:100%;
+}
+
+th {
+  font-weight:bold;
+}
+
+thead th {
+  background: $light-blue;
+  border-bottom: 1px solid $medium-blue;
+}
+
+th,
+td,
+caption {
+  padding:4px 10px 4px 5px;
+}
+
+tbody tr:nth-child(even) td,
+tbody tr.even td {
+  background:$very-light-blue;
+}
+
+caption {
+  background:#eee;
+}
+
+.small {
+	font-size: .8em;
+	margin-bottom: 1.875em;
+	line-height: 1.875em;
+}
+
+.large {
+	font-size: 1.2em;
+	line-height: 2.5em;
+	margin-bottom: 1.25em;
+}
+
+.hide {
+	display:none;
+}
+
+.highlight {
+	background: #FF0; /* Yellow */
+}
+
+.first {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.last {
+	margin-right: 0;
+	padding-right: 0;
+	border-right: none;
+	border-bottom: none;
+}
+
+.top {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.bottom {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+

@@ -1,0 +1,31 @@
+// media query breakpoints
+@mixin breakpoint($point) {
+	@if $point == view-lg {
+		@media (min-width: 901px) { @content; }
+	}
+	@else if $point == view-med {
+		@media (min-width:501px) and (max-width: 900px) { @content; }
+	}
+	@else if $point == view-sm {
+		@media (max-width: 500px)  { @content; }
+	}
+}
+
+// web fonts and typeface styles
+// font-family variables 
+$serif: 'quadon';
+$serif-heavy: 'quadonheavy';
+$serif-thin: 'quadonthin';
+$sans: 'gentona';
+
+@mixin spaced-headline($font) {
+	@if $font == serif {
+		font-family: $serif, Georgia, sans-serif;
+	}
+	@else if $font == sans {
+		font-family: $sans, Arial, Helvetica, sans-serif;
+	}
+	text-transform:uppercase;
+	letter-spacing: 0.15em;
+}
+// gradients

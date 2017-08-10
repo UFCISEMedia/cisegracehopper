@@ -1,0 +1,142 @@
+/*----------------------------------------------------------------------
+PRIMARY NAVIGATION 
+----------------------------------------------------------------------*/
+
+#primary-nav {
+	background-color:$dark-blue;
+	bottom: 0;
+	font-size: 1em;
+	height: 40px;
+	left: 0;
+	padding-left: 0;
+	position: relative;
+	z-index:9988 !important;
+	border-top: 4px solid $white;
+	border-bottom: 4px solid $white;
+}
+#primary-nav .container {
+	z-index: 99999;
+}
+#primary-nav li {
+	float: left;
+	height: 40px;
+	margin: -4px 0;
+	border-top: 4px solid $white;
+	&:hover {
+		border-top: 4px solid $orange;
+	}
+	&:active {
+		border-top: 4px solid $orange;
+		background-color:$very-dark-blue;
+	}
+}
+#primary-nav a {
+	border-left: 1px solid $medium-blue;
+	display: block;
+	margin-top: 5px;
+	text-align: center;
+	background-repeat: no-repeat;
+	@include spaced-headline(serif);
+	height: 17px;
+	padding: 9px 12px; 
+}
+#primary-nav #home a {
+  	border-left: none;
+	border-left: 1px solid $medium-blue;
+}
+.home #home a,
+#primary-nav .current_page_ancestor .current_page_item a,
+#primary-nav .current_page_item > a {
+  cursor: default;
+}
+#primary-nav .current_page_ancestor .current_page_item a:hover,
+#primary-nav .current_page_item > a:hover {
+  text-decoration: none;
+}
+#primary-nav .current_page_ancestor .current_page_item a,
+#primary-nav .current_page_ancestor .current_page_item a:hover,
+#primary-nav .current-menu-ancestor .current-menu-item a,
+#primary-nav .current-menu-ancestor .current-menu-item a:hover {
+  background-color: $light-blue;
+  color: $dark-blue;
+}
+#primary-nav .children {
+	display: none;
+	font-size: 0.8em;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+#primary-nav .children li {
+	background-image: none;
+	height: 100%;
+}
+
+#primary-nav .parent li.current_page_item a {
+	color: $white;
+}
+#primary-nav .parent li.current_page_item {
+	border-top: none;
+	border-bottom: none;
+} 
+#primary-nav li.current_page_item,
+#primary-nav li.current_page_ancestor,
+#primary-nav li.current-menu-item,
+#primary-nav li.current-menu-ancestor {
+	color: $dark-blue;
+	background-color: $white;
+	border-top: 4px solid $orange;
+}
+#primary-nav li.current_page_ancestor,
+#primary-nav li.current-menu-ancestor {
+	background-color: $dark-blue;
+}
+
+#primary-nav .children li {
+	float: none;
+	height: 100%;
+}
+#primary-nav .children a {
+	padding: 10px 25px;
+	text-align: left;
+	height: 100%;
+	background-image: none;
+	border: none;
+}
+#primary-nav #home {
+	background-image: url(images/bg-sprite-transparent.png);
+	background-position: -796px -22px;
+	padding: 0;
+	height: 40px;
+	width: 72px;
+}
+.home #primary-nav #home {
+	background-position: -732px -22px;
+	background-color:$white;
+	border-top: 4px solid $orange;
+}
+.home #primary-nav #home a,
+#primary-nav li.current_page_item > a:first-child,
+#primary-nav li.current-menu-item > a:first-child {
+	border: none;
+	color: $dark-blue;
+}
+#primary-nav .parent a {
+	&:after {
+		content: " \25E2";
+		font-size: 0.6em;
+		// vertical-align: top;
+	}
+}
+
+#primary-nav .parent li a {
+	padding-right: 25px;
+  	background: transparent url(images/bg-sprite-transparent.png) -1198px -559px no-repeat; 
+	margin-top: 0;
+	&:after {
+		content:none;
+	}
+	&:hover {
+		background-color: $medium-blue;
+	}	
+}

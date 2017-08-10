@@ -1,0 +1,35 @@
+/*----------------------------------------------------------------------
+PRIMARY NAVIGATION - DROP DOWN
+Built using navigation.scss
+----------------------------------------------------------------------*/
+
+// import mixins
+@import '_mixins';
+
+// import colors
+@import '_colors';
+
+#primary-nav {
+	li {
+		position:relative;
+	}
+ .children {
+		//background-color: $medium-blue;
+		width: 200px;
+		top: 44px;
+		position: absolute;
+		z-index: 99999;
+		border:3px solid $white;
+		border-top:none;
+		left: -2px;
+		padding: 4px 0;
+ 		li {
+			border-top: 1px solid $medium-blue;
+			background-color: $dark-blue;
+		}
+	}
+}
+// #primary-nav li.current_page_ancestor > a:first-child,
+// #primary-nav li.current-menu-ancestor > a:first-child {
+//   color: $white;
+// }
