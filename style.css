@@ -1231,6 +1231,7 @@ td ul {
     padding: 0px 10px;
 	float: left;
 	width: 580px;
+	line-height: 32px;
 }
 
 #secondary h4 {
@@ -1259,8 +1260,8 @@ td ul {
 }
 
 .upper-container {
-	padding-bottom: 10px;
-	height: 125px;
+	padding-bottom: 5px;
+	height: 160px;
 }
 
 /*Countdown Clock Styles*/
