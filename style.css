@@ -1209,7 +1209,6 @@ td ul {
 	
 }
 
-
 #secondary {
     background-color: #fff;
     overflow: hidden;
@@ -1230,6 +1229,8 @@ td ul {
     color: #243778;
     margin: 0;
     padding: 0px 10px;
+	float: left;
+	width: 580px;
 }
 
 #secondary h4 {
@@ -1257,8 +1258,49 @@ td ul {
 	padding: 15px 0;
 }
 
+.upper-container {
+	padding-bottom: 10px;
+	height: 125px;
+}
+
+/*Countdown Clock Styles*/
+.countdown-clock {
+	float: right;
+	width: 400px;
+	margin: auto;
+	text-align: center;
+	border-radius: 4px;
+	font-family: 'Roboto Condensed',sans-serif;
+	font-size: 20px;
+	background-color: #f36f21;
+}
+
+#secondary .container .countdown-clock p {
+	font-family: 'Roboto Condensed',sans-serif;
+	font-size: 20px;
+}
+
+.countdown-numbers {
+	
+}
+
+#days, #hours, #minutes, #seconds {
+	display: inline-block;
+	width: 80px;
+	background-color: #005496;
+	padding: 15px 0;
+	color: #fff;
+}
+
+.unit {
+	display: inline-block;
+	width: 80px;
+	padding: 5px 0;
+}
+
 .secondary-content-container {
 	margin-top: 40px;
+	clear: both;
 }
 
 #secondary .content-columns {
