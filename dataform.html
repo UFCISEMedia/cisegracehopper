@@ -54,7 +54,7 @@
 					<li class="page_item"><a href="/gracehopper/day3.html">Day 3</a></li>
 				</ul>
 			</li>	 		
-			<li class="page_item activenav"><a href="/gracehopper/people.html">Faculty <span class="caret"></span></a>
+			<li class="page_item"><a href="/gracehopper/people.html">Faculty <span class="caret"></span></a>
 				<ul class="children">
 					<li class="page_item"><a href="/gracehopper/boucher.html">Christina Boucher</a></li>
 					<li class="page_item"><a href="/gracehopper/anthony.html">Lisa Anthony</a></li>
@@ -84,14 +84,11 @@
 					<label for="lname"><span>&#42;</span> Last Name:</label>
 					<input required type="text" name="lname"> <br>
 					<label for="email"><span>&#42;</span> Email:</label>
-					<input required type="email" name="email">
-					<label for="mobile"><span>&#42;</span> Mobile Phone:</label>
-					<input required type="text" name="mobile"><br>
+					<input required type="email" name="email"><br>
 					<label for="degree"><span>&#42;</span> Graduate Degree Interest:</label>
 						<input required type="radio" name="degree" value="Ph.D. w/Masters">Ph.D. w/Masters			
 						<input type="radio" name="degree" value="Ph.D. only (have Masters)">Ph.D. only (have Masters)
-						<input type="radio" name="degree" value="Masters">Masters					
-						<input type="radio" name="degree" value="Online Masters">Online Masters<br>					
+						<input type="radio" name="degree" value="Masters">Masters<br>					
 					<label for="institution"><span>&#42;</span> Undergraduate Institution:</label>
 					<input required type="text" name="institution"><br>
 					<label for="major"><span>&#42;</span> Undergraduate Major:</label>
@@ -126,44 +123,6 @@
 						<option value="2020">2020</option>
 						<option value="2021">2021</option>
 					</select><br>
-					<label for="gpa"><span>&#42;</span> Cumulative GPA: (4.0 scale)</label>
-					<input required type="text" name="gpa"><br>
-					<label for="mainstitution">Masters Institution, if applicable:</label>
-					<input type="text" name="mainstitution"><br>
-					<label for="mamajor">Masters Major, if applicable:</label>
-					<input type="text" name="mamajor"><br>
-					<label for="magradmonth">Masters Graduation Month, if applicable:</label>
-					<select name="magradmonth">
-						<option value="" disabled selected hidden>Please Select</option>
-						<option value="January">January</option>
-						<option value="February">February</option>
-						<option value="March">March</option>
-						<option value="April">April</option>
-						<option value="May">May</option>
-						<option value="June">June</option>
-						<option value="July">July</option>
-						<option value="August">August</option>
-						<option value="September">September</option>
-						<option value="October">October</option>
-						<option value="November">November</option>
-						<option value="December">December</option>
-					</select>
-					<label for="magradyear">Masters Graduation Year, if applicable:</label>
-					<select name="magradyear">
-						<option value="" disabled selected hidden>Please Select</option>
-						<option value="2012">2012</option>
-						<option value="2013">2013</option>
-						<option value="2014">2014</option>
-						<option value="2015">2015</option>
-						<option value="2016">2016</option>
-						<option value="2017">2017</option>
-						<option value="2018">2018</option>
-						<option value="2019">2019</option>
-						<option value="2020">2020</option>
-						<option value="2021">2021</option>
-					</select><br>
-					<label for="magpa">Masters GPA, if applicable: (4.0 scale)</label>
-					<input type="text" name="magpa"><br>					
 					<label for="gradinterest"><span>&#42;</span> Graduate Program of Interest (Top Choice):</label>
 					<select required name="gradinterest">
 						<option value="" disabled selected hidden>Please Select</option>
@@ -205,10 +164,12 @@
 						<input required type="radio" name="citizenship" value="U.S. Citizen">U.S. Citizen					
 						<input type="radio" name="citizenship" value="Permanent Resident">Permanent Resident
 						<input type="radio" name="citizenship" value="International">International<br>				
+					<label for="comment">Any other details you would like to share:</label><br>
+					<textarea name="comment"></textarea>
 					<fieldset>
 						<legend>Authorization to Collect Information</legend>
 							<p>I certify that the information submitted in this form is mine, and I give my permission for the Herbert Wertheim College of Engineering to use it for the purposes of graduate recruitment and other academic endeavors.</p>
-						<input required type="checkbox" name="agree" value="Agree"><span>&#42;</span> Agree				
+						<input required type="checkbox" name="agree" value="Agree"><span>&#42;</span> Agree			
 					</fieldset>
 					<input type="submit" name="submit" value="Submit">
 					<input type="reset" name="reset" value="Reset">

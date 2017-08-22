@@ -1389,6 +1389,18 @@ fieldset input[type=checkbox] {
 	padding-top: 10px;
 }
 
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+	margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
 /*Footer Content*/
 footer {
 	background: url("images/bg-institutional-footer-wrap.jpg") repeat-x scroll 0 top white;
