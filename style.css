@@ -86,9 +86,11 @@ hr {
 }
 
 .container, .container-5 {
-    width: 1170px;
+    max-width: 1170px;
+	min-width: 900px;
     margin: 0 auto;
-    position: relative
+    position: relative;
+	padding: 0 20px;
 }
 
 .column, .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21, .span-22, .span-23, .span-24 { 
@@ -1202,7 +1204,7 @@ td ul {
     height: auto; 
     margin: 20px auto;
     overflow: hidden;
-	width: 1000px;
+	max-width: 1000px;
 }
 
 #secondary h3 {
@@ -1265,10 +1267,6 @@ td ul {
 #secondary .container .countdown-clock p {
 	font-family: 'Roboto Condensed',sans-serif;
 	font-size: 20px;
-}
-
-.countdown-numbers {
-	
 }
 
 #days, #hours, #minutes, #seconds {
@@ -1405,7 +1403,9 @@ footer {
 
 .site-footer .container {
     position: relative;
-    padding: 20px 0
+    padding: 20px 0;
+	max-width: 1170px;
+	min-width: 900px;
 }
 
 #footer-content .uf-monogram {
@@ -1425,6 +1425,11 @@ footer {
 
 footer .uf-logo {
     float: right; 
+	padding-right: 20px;
+}
+
+footer .footerlinks {
+	padding-left: 20px;
 }
 
 footer h3 {
