@@ -74,30 +74,31 @@
 	</div><!-- end #feature-wrap -->
 
 	<div id="secondary">
-		<div class="datacollection container">
+		<div class="container">
 			<h3>Interested in learning more about us? Well, we want to learn more about you. Fill out the following to keep in touch with us.</h3>
 			<div class="secondary-content-container">
-			  <form id="myform" action="portfolioform.php" method="post">
-					<label for="fname">First Name:</label>
-					<input type="text" name="fname">
-					<label for="lname">Last Name:</label>
-					<input type="text" name="lname"> <br>
-					<label for="email">Email:</label>
-					<input type="email" name="email">
-					<label for="mobile">Mobile Phone:</label>
-					<input type="text" name="mobile"><br>
-					<label for="degree">Graduate Degree Interest:</label>
-						<input type="radio" name="degree" value="Ph.D. w/Masters">Ph.D. w/Masters					
+			<h2>Request of Information</h2>
+			  <form id="dataform" action="#" method="post">
+					<label for="fname"><span>&#42;</span> First Name:</label>
+					<input required type="text" name="fname">
+					<label for="lname"><span>&#42;</span> Last Name:</label>
+					<input required type="text" name="lname"> <br>
+					<label for="email"><span>&#42;</span> Email:</label>
+					<input required type="email" name="email">
+					<label for="mobile"><span>&#42;</span> Mobile Phone:</label>
+					<input required type="text" name="mobile"><br>
+					<label for="degree"><span>&#42;</span> Graduate Degree Interest:</label>
+						<input required type="radio" name="degree" value="Ph.D. w/Masters">Ph.D. w/Masters			
 						<input type="radio" name="degree" value="Ph.D. only (have Masters)">Ph.D. only (have Masters)
 						<input type="radio" name="degree" value="Masters">Masters					
 						<input type="radio" name="degree" value="Online Masters">Online Masters<br>					
-					<label for="institution">Undergraduate Institution:</label>
-					<input type="text" name="institution"><br>
-					<label for="major">Undergraduate Major:</label>
-					<input type="text" name="major"><br>
-					<label for="gradmonth">Graduation Month:</label>
+					<label for="institution"><span>&#42;</span> Undergraduate Institution:</label>
+					<input required type="text" name="institution"><br>
+					<label for="major"><span>&#42;</span> Undergraduate Major:</label>
+					<input required type="text" name="major"><br>
+					<label for="gradmonth"><span>&#42;</span> Graduation Month:</label>
 					<select name="gradmonth" required>
-						<option value="Please Select">Please Select</option>
+						<option value="" disabled selected hidden>Please Select</option>
 						<option value="January">January</option>
 						<option value="February">February</option>
 						<option value="March">March</option>
@@ -111,9 +112,9 @@
 						<option value="November">November</option>
 						<option value="December">December</option>
 					</select>
-					<label for="gradyear">Graduation Year:</label>
+					<label for="gradyear"><span>&#42;</span> Graduation Year:</label>
 					<select name="gradyear" required>
-						<option value="Please Select">Please Select</option>
+						<option value="" disabled selected hidden>Please Select</option>
 						<option value="2012">2012</option>
 						<option value="2013">2013</option>
 						<option value="2014">2014</option>
@@ -124,16 +125,16 @@
 						<option value="2019">2019</option>
 						<option value="2020">2020</option>
 						<option value="2021">2021</option>
-					</select>
-					<label for="gpa">Cumulative GPA: (4.0 scale)</label>
-					<input type="text" name="gpa"><br>
+					</select><br>
+					<label for="gpa"><span>&#42;</span> Cumulative GPA: (4.0 scale)</label>
+					<input required type="text" name="gpa"><br>
 					<label for="mainstitution">Masters Institution, if applicable:</label>
 					<input type="text" name="mainstitution"><br>
 					<label for="mamajor">Masters Major, if applicable:</label>
 					<input type="text" name="mamajor"><br>
 					<label for="magradmonth">Masters Graduation Month, if applicable:</label>
-					<select name="magradmonth" required>
-						<option value="Please Select">Please Select</option>
+					<select name="magradmonth">
+						<option value="" disabled selected hidden>Please Select</option>
 						<option value="January">January</option>
 						<option value="February">February</option>
 						<option value="March">March</option>
@@ -148,8 +149,8 @@
 						<option value="December">December</option>
 					</select>
 					<label for="magradyear">Masters Graduation Year, if applicable:</label>
-					<select name="magradyear" required>
-						<option value="Please Select">Please Select</option>
+					<select name="magradyear">
+						<option value="" disabled selected hidden>Please Select</option>
 						<option value="2012">2012</option>
 						<option value="2013">2013</option>
 						<option value="2014">2014</option>
@@ -160,25 +161,25 @@
 						<option value="2019">2019</option>
 						<option value="2020">2020</option>
 						<option value="2021">2021</option>
-					</select>
+					</select><br>
 					<label for="magpa">Masters GPA, if applicable: (4.0 scale)</label>
 					<input type="text" name="magpa"><br>					
-					<label for="gradinterest">Graduate Program of Interest (Top Choice):</label>
-					<select name="gradinterest">
-						<option value="Please Select">Please Select</option>
+					<label for="gradinterest"><span>&#42;</span> Graduate Program of Interest (Top Choice):</label>
+					<select required name="gradinterest">
+						<option value="" disabled selected hidden>Please Select</option>
 						<option value="Computer Engineering">Computer Engineering</option>
 						<option value="Computer Science">Computer Science</option>
 						<option value="Human-Centered Computing">Human-Centered Computing</option>
 					</select><br>				
-					<label for="gradinterest">Graduate Program of Interest (Second Choice):</label>
-					<select name="gradinterest" required>
-						<option value="Please Select">Please Select</option>
+					<label for="gradinterest"><span>&#42;</span> Graduate Program of Interest (Second Choice):</label>
+					<select required name="gradinterest">
+						<option value="" disabled selected hidden>Please Select</option>
 						<option value="Computer Engineering">Computer Engineering</option>
 						<option value="Computer Science">Computer Science</option>
 						<option value="Human-Centered Computing">Human-Centered Computing</option>
 					</select><br>
-					<label for="ethnicity">Ethnicity (select all that apply)</label><br>
-						<input type="checkbox" name="ethnicity1">American Indian or Alaska Native<br>
+					<label for="ethnicity"><span>&#42;</span> Ethnicity (select all that apply):</label><br>
+						<input required type="checkbox" name="ethnicity1">American Indian or Alaska Native<br>
 						<input type="checkbox" name="ethnicity2">Asian<br>
 						<input type="checkbox" name="ethnicity3">Black or African American<br>
 						<input type="checkbox" name="ethnicity4">Hispanic or Latino<br>
@@ -190,8 +191,8 @@
 						<p><b>Hispanic or Latino</b>: a Hispanic or Latino person of Cuban, Mexican, Chicano, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race.</p>
 						<p><b>Native Hawaiian or other Pacific Islander</b>: a person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands.</p>
 						<p><b>White</b>: a person having origins in any of the original peoples of Europe, the Middle East, or North Africa.</p>
-					<label for="gender">Gender (select all that apply)</label><br>
-						<input type="checkbox" name="gender1">Female<br>
+					<label for="gender"><span>&#42;</span> Gender (select all that apply):</label><br>
+						<input required type="checkbox" name="gender1">Female<br>
 						<input type="checkbox" name="gender2">Male<br>
 						<input type="checkbox" name="gender3">Transgender<br>
 						<input type="checkbox" name="gender4">LGBTQ+<br>
@@ -200,14 +201,14 @@
 						<p><b>Male</b>: Identify as a man.</p>
 						<p><b>Transgender</b>: Having an identity that is non-binary or different than assigned at birth. This includes agender, gender fluid, gender non-conforming, genderqueer, unisex, and others.</p>
 						<p><b>LGBTQ+</b>: Select this option in addition to your gender if you identify as part of the Lesbian, Gay, Bisexual, Transgender, Queer (LGBTQ+) community.</p>
-					<label for="citizenship">Citizenship:</label>
-						<input type="radio" name="citizenship" value="U.S. Citizen">U.S. Citizen					
+					<label for="citizenship"><span>&#42;</span> Citizenship:</label>
+						<input required type="radio" name="citizenship" value="U.S. Citizen">U.S. Citizen					
 						<input type="radio" name="citizenship" value="Permanent Resident">Permanent Resident
 						<input type="radio" name="citizenship" value="International">International<br>				
 					<fieldset>
 						<legend>Authorization to Collect Information</legend>
-							I certify that the information submitted in this form is mine, and I give my permission for the Herbert Wertheim College of Engineering to use it for the purposes of graduate recruitment and other academic endeavors.<br>
-						<input type="radio" name="agree" value="Agree">Agree				
+							<p>I certify that the information submitted in this form is mine, and I give my permission for the Herbert Wertheim College of Engineering to use it for the purposes of graduate recruitment and other academic endeavors.</p>
+						<input required type="checkbox" name="agree" value="Agree"><span>&#42;</span> Agree				
 					</fieldset>
 					<input type="submit" name="submit" value="Submit">
 					<input type="reset" name="reset" value="Reset">

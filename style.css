@@ -1332,8 +1332,63 @@ td ul {
 
 /*Form Styles*/
 
-input, select {
-    vertical-align: middle
+form {
+	max-width: 900px;
+	margin: auto;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	padding: 10px 20px;
+}
+
+#dataform span {
+	color: #AA0002;
+}
+
+label {
+	font-size: 16px;
+	margin-right: 5px;
+}
+
+input {
+	font-size: 16px;
+	margin: 13px 15px 15px 0;
+    vertical-align: middle;
+}
+
+input[type=radio] {
+	margin: 11px 5px 15px 10px;
+}
+
+input[type=checkbox] {
+	margin: 3px 5px 3px 15px;
+}
+
+select {
+    vertical-align: middle;
+	margin: 13px 15px 15px 0;
+}
+
+#secondary .container form p {
+	font-size: 16px;
+	padding-left: 20px;
+}
+
+fieldset {
+	border: 1px solid #ccc;
+    border-radius: 5px;
+	font-size: 16px;
+}
+
+legend {
+	margin-left: 10px;
+}
+
+fieldset input[type=checkbox] {
+	margin: 10px 5px 16px 20px;
+}
+
+#secondary .container form fieldset p {
+	padding-top: 10px;
 }
 
 /*Footer Content*/
