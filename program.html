@@ -47,22 +47,22 @@
 	 <nav id="primary-nav" role="navigation">
 	 	<ul class="container">
 	 		<li><a href="index.html">Home</a></li>
-	 		<li class="page_item"><a href="/gracehopper/program.html">Program <span class="caret"></span></a>
-				<ul class="children">
+	 		<li class="page_item activenav"><a href="/gracehopper/program.html">Program <!--<span class="caret"></span>--></a>
+				<!--<ul class="children">
 					<li class="page_item"><a href="/gracehopper/day1.html">Day 1</a></li>
 					<li class="page_item"><a href="/gracehopper/day2.html">Day 2</a></li>
 					<li class="page_item"><a href="/gracehopper/day3.html">Day 3</a></li>
-				</ul>
+				</ul>-->
 			</li>	 		
-			<li class="page_item"><a href="/gracehopper/people.html">Faculty <span class="caret"></span></a>
-				<ul class="children">
+			<li class="page_item"><a href="/gracehopper/people.html">Faculty</a>
+				<!--<ul class="children">
 					<li class="page_item"><a href="/gracehopper/boucher.html">Christina Boucher</a></li>
 					<li class="page_item"><a href="/gracehopper/anthony.html">Lisa Anthony</a></li>
 					<li class="page_item"><a href="/gracehopper/gardnermccune.html">Christina Gardner-McCune</a></li>
 					<li class="page_item"><a href="/gracehopper/gilbert.html">Juan Gilbert</a></li>
 					<li class="page_item"><a href="/gracehopper/zhang.html">Rong Zhang</a></li>
 					<li class="page_item"><a href="/gracehopper/mcmullen.html">Kyla McMullen</a></li>
-				</ul>
+				</ul>-->
 			</li>
 		</ul>
 	</nav><!-- end #primary-nav -->	
@@ -75,106 +75,36 @@
 
 	<div id="secondary">
 		<div class="container">
+			<div class="upper-container">
+				<h3>Interested in learning more about our department? Stop by booth 1942 during the conference to meet some of our faculty and students, and to learn more about the programs and research areas we offer.</h3>
+				<!--Countdown Clock Code-->
+				<div class="countdown-clock">
+					<p>We'll see you there!</p>
+					<div class="countdown-numbers">
+						<div id="days" class="time"></div>
+						<div id="hours" class="time"></div>
+						<div id="minutes" class="time"></div>
+						<div id="seconds" class="time"></div>
+					</div>
+				<div class="unit">days</div>
+				<div class="unit">hours</div>
+				<div class="unit">minutes</div>
+				<div class="unit">seconds</div>
+				</div>
+				<!--End Countdown Clock-->
+			</div>
 			<div class="secondary-content-container">
-			<h2>Request for Information</h2>
-			  <form id="dataform" action="#" method="post">
-					<label for="fname"><span>&#42;</span> First Name:</label>
-					<input required type="text" name="fname">
-					<label for="lname"><span>&#42;</span> Last Name:</label>
-					<input required type="text" name="lname"> <br>
-					<label for="email"><span>&#42;</span> Email:</label>
-					<input required type="email" name="email"><br>
-					<label for="degree"><span>&#42;</span> Graduate Degree Interest:</label>
-						<input required type="radio" name="degree" value="Ph.D. w/Masters">Ph.D. w/Masters			
-						<input type="radio" name="degree" value="Ph.D. only (have Masters)">Ph.D. only (have Masters)
-						<input type="radio" name="degree" value="Masters">Masters<br>					
-					<label for="institution"><span>&#42;</span> Undergraduate Institution:</label>
-					<input required type="text" name="institution"><br>
-					<label for="major"><span>&#42;</span> Undergraduate Major:</label>
-					<input required type="text" name="major"><br>
-					<label for="gradmonth"><span>&#42;</span> Graduation Month:</label>
-					<select name="gradmonth" required>
-						<option value="" disabled selected hidden>Please Select</option>
-						<option value="January">January</option>
-						<option value="February">February</option>
-						<option value="March">March</option>
-						<option value="April">April</option>
-						<option value="May">May</option>
-						<option value="June">June</option>
-						<option value="July">July</option>
-						<option value="August">August</option>
-						<option value="September">September</option>
-						<option value="October">October</option>
-						<option value="November">November</option>
-						<option value="December">December</option>
-					</select>
-					<label for="gradyear"><span>&#42;</span> Graduation Year:</label>
-					<select name="gradyear" required>
-						<option value="" disabled selected hidden>Please Select</option>
-						<option value="2012">2012</option>
-						<option value="2013">2013</option>
-						<option value="2014">2014</option>
-						<option value="2015">2015</option>
-						<option value="2016">2016</option>
-						<option value="2017">2017</option>
-						<option value="2018">2018</option>
-						<option value="2019">2019</option>
-						<option value="2020">2020</option>
-						<option value="2021">2021</option>
-					</select><br>
-					<label for="gradinterest"><span>&#42;</span> Graduate Program of Interest (Top Choice):</label>
-					<select required name="gradinterest">
-						<option value="" disabled selected hidden>Please Select</option>
-						<option value="Computer Engineering">Computer Engineering</option>
-						<option value="Computer Science">Computer Science</option>
-						<option value="Human-Centered Computing">Human-Centered Computing</option>
-					</select><br>				
-					<label for="gradinterest"><span>&#42;</span> Graduate Program of Interest (Second Choice):</label>
-					<select required name="gradinterest">
-						<option value="" disabled selected hidden>Please Select</option>
-						<option value="Computer Engineering">Computer Engineering</option>
-						<option value="Computer Science">Computer Science</option>
-						<option value="Human-Centered Computing">Human-Centered Computing</option>
-					</select><br>
-					<label for="ethnicity"><span>&#42;</span> Ethnicity (select all that apply):</label><br>
-						<input required type="checkbox" name="ethnicity1">American Indian or Alaska Native<br>
-						<input type="checkbox" name="ethnicity2">Asian<br>
-						<input type="checkbox" name="ethnicity3">Black or African American<br>
-						<input type="checkbox" name="ethnicity4">Hispanic or Latino<br>
-						<input type="checkbox" name="ethnicity5">Native Hawaiian or Other Pacific Islander<br>
-						<input type="checkbox" name="ethnicity6">White<br>
-						<input type="checkbox" name="ethnicity7">Other<br>
-						<p><b>American Indian or Alaska Native</b>: a person having origins in any of the original peoples of North and South America (including Central America), and who maintains tribal affiliation or community attachment.</p>
-						<p><b>Asian</b>: a person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent including, for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam.</p>
-						<p><b>Black or African American</b>: a person having origins in any black racial groups of Africa.</p>
-						<p><b>Hispanic or Latino</b>: a Hispanic or Latino person of Cuban, Mexican, Chicano, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race.</p>
-						<p><b>Native Hawaiian or other Pacific Islander</b>: a person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands.</p>
-						<p><b>White</b>: a person having origins in any of the original peoples of Europe, the Middle East, or North Africa.</p>
-					<label for="gender"><span>&#42;</span> Gender (select all that apply):</label><br>
-						<input required type="checkbox" name="gender1">Female<br>
-						<input type="checkbox" name="gender2">Male<br>
-						<input type="checkbox" name="gender3">Transgender<br>
-						<input type="checkbox" name="gender4">LGBTQ+<br>
-						<input type="checkbox" name="gender5">Prefer Not to Answer<br>
-						<p><b>Female</b>: Identify as a woman.</p>
-						<p><b>Male</b>: Identify as a man.</p>
-						<p><b>Transgender</b>: Having an identity that is non-binary or different than assigned at birth. This includes agender, gender fluid, gender non-conforming, genderqueer, unisex, and others.</p>
-						<p><b>LGBTQ+</b>: Select this option in addition to your gender if you identify as part of the Lesbian, Gay, Bisexual, Transgender, Queer (LGBTQ+) community.</p>
-					<label for="citizenship"><span>&#42;</span> Citizenship:</label>
-						<input required type="radio" name="citizenship" value="U.S. Citizen">U.S. Citizen					
-						<input type="radio" name="citizenship" value="Permanent Resident">Permanent Resident
-						<input type="radio" name="citizenship" value="International">International				
-						<input type="radio" name="citizenship" value="Other">Other<br>				
-					<label for="comment">Any other details you would like to share:</label><br>
-					<textarea name="comment"></textarea>
-					<fieldset>
-						<legend>Authorization to Collect Information</legend>
-							<p>I certify that the information submitted in this form is mine, and I give my permission for the Herbert Wertheim College of Engineering to use it for the purposes of graduate recruitment and other academic endeavors.</p>
-						<input required type="checkbox" name="agree" value="Agree"><span>&#42;</span> Agree			
-					</fieldset>
-					<input type="submit" name="submit" value="Submit">
-					<input type="reset" name="reset" value="Reset">
-				</form>
+				<div class="content-columns-people">
+					<table class="placeholder">
+						<tr>
+							<td align="center">
+								<h5>We're working on our program. <br>
+								Check back with us later to see what we'll be doing at the <br>
+								Grace Hopper Celebration of Women in Computing.</h5>
+							</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div> <!-- end #secondary -->

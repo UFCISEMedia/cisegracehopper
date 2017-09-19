@@ -687,9 +687,9 @@ button:hover, button:active, .button:hover, .button:active, .gform_button:hover,
 #secondary h5 {
 	font-family: 'Roboto Condensed',sans-serif;
 	font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     color: #243778;
-    margin: 0;
+    margin: 0 0 5px;
 }
 
 #secondary .container p {
@@ -773,6 +773,22 @@ button:hover, button:active, .button:hover, .button:active, .gform_button:hover,
 
 /*Table Styles*/
 
+.placeholder tbody td {
+    background: #E8EFF5;
+    padding: 150px 60px;
+}
+
+#secondary .placeholder tr {
+	border: 1px solid #f36f21;
+}
+
+.content-columns-people p, .content-columns p {
+	line-height: 1.3em;
+}
+
+/*Home Page Placeholder Table*/
+/*Table Styles*/
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -809,8 +825,10 @@ td ul {
 	border-top: 1px solid #E8EFF5;
 }
 
-/*Form Styles*/
 
+
+/*Form Styles*/
+/*
 form {
 	max-width: 900px;
 	margin: auto;
@@ -898,7 +916,8 @@ input[type=submit], input[type=reset] {
 	border: 1px solid #838181;
 	padding: 2px 10px 3px;
 	text-align: center;
-}
+}*/
+
 
 /*Footer Content*/
 footer {
